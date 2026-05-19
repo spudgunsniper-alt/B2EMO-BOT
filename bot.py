@@ -37,6 +37,11 @@ async def commit(ctx, *, message):
         pending[channel_id].clear()
 
 import os
+
+print("TOKEN:", os.getenv("DISCORD_TOKEN"))
+
 bot.run(os.getenv("DISCORD_TOKEN"))
+
+
 
 
